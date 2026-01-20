@@ -1,0 +1,190 @@
+项目目录结构 - d:\zhuomian\html\html
+
+===== HTML 页面文件 =====
+index.html                  (首页 - 已修改，添加了中英文切换、浅蓝色背景、开源项目Portfolio)
+about.html                  (关于页面)
+blog.html                   (博客列表)
+blog-details.html           (博客详情)
+contact.html                (联系页面)
+error.html                  (404错误页)
+faq.html                    (常见问题)
+features.html               (功能页面)
+features-details.html       (功能详情)
+portfolio.html              (项目列表)
+portfolio-details.html      (项目详情)
+pricing.html                (价格页面)
+services.html               (定制页面)
+services-details.html       (定制详情)
+team.html                   (团队页面)
+testimonials.html           (用户评价)
+
+===== CSS 样式文件 (assets/css/) =====
+animate.min.css             (动画库)
+bootstrap.min.css           (Bootstrap框架)
+boxicons.min.css            (图标库)
+magnific-popup.min.css      (弹窗库)
+meanmenu.min.css            (菜单库)
+responsive.css              (响应式样式 - 已修改，添加语言按钮响应式)
+responsive.scss             (SCSS源文件)
+style.css                   (主样式 - 已修改，添加浅蓝色背景和语言按钮样式)
+style.scss                  (SCSS源文件)
+style.css.map               (CSS映射文件)
+responsive.css.map          (响应式CSS映射文件)
+
+===== JavaScript 脚本文件 (assets/js/) =====
+active.js                   (主要功能脚本 - 已修改，添加语言切换功能)
+bootstrap.bundle.min.js     (Bootstrap JS)
+jquery.min.js               (jQuery库)
+magnific-popup.min.js       (弹窗JS)
+meanmenu.min.js             (菜单JS)
+parallax.min.js             (视差效果)
+translations.js             (翻译文件 - 已修改，包含完整英文和中文翻译)
+
+===== 图片文件 (assets/images/) =====
+Banner 图片:
+  banner1.jpg               (横幅图片1)
+  banner2.jpg               (横幅图片2)
+  banner3.jpg               (横幅图片3)
+  banner4.jpg               (横幅图片4)
+
+Blog 图片:
+  blog1.jpg                 (博客图片1)
+  blog2.jpg                 (博客图片2)
+  blog3.jpg                 (博客图片3)
+  blog4.jpg                 (博客图片4)
+  blog5.jpg                 (博客图片5)
+  blog6.jpg                 (博客图片6)
+
+Portfolio/开源项目 图片:
+  portfolio1.jpg            (项目图片1 - Vue Admin Dashboard)
+  portfolio2.jpg            (项目图片2 - React E-Commerce Platform)
+  portfolio3.jpg            (项目图片3 - Node.js Task Manager)
+  portfolio4.jpg            (项目图片4 - Python Data Analyzer)
+  portfolio5.jpg            (项目图片5 - Mobile Weather App)
+  portfolio6.jpg            (项目图片6 - Web Framework CLI Tool)
+
+Team 图片:
+  team1.jpg                 (团队成员1)
+  team2.jpg                 (团队成员2)
+  team3.jpg                 (团队成员3)
+  team4.jpg                 (团队成员4)
+  team5.jpg                 (团队成员5)
+  team6.jpg                 (团队成员6)
+  team7.jpg                 (团队成员7)
+  team8.jpg                 (团队成员8)
+
+功能图片:
+  features1.png             (功能图片1)
+  features2.png             (功能图片2)
+  features3.png             (功能图片3)
+
+合作伙伴 Logo:
+  partner1.png              (合作伙伴1)
+  partner2.png              (合作伙伴2)
+  partner3.png              (合作伙伴3)
+  partner4.png              (合作伙伴4)
+  partner5.png              (合作伙伴5)
+  partner6.png              (合作伙伴6)
+
+其他图片:
+  logo.png                  (网站logo)
+  white-logo.png            (白色logo)
+  favicon.png               (网站favicon)
+  error.png                 (错误页面图片)
+  contact.png               (联系页面图片)
+  cta-bg.jpg                (CTA背景图片)
+
+===== 字体文件 (assets/fonts/) =====
+(包含项目所需的字体文件)
+
+===== 已实现的功能 =====
+
+1. 中英文语言切换
+   - 右上角"ZH/EN"按钮
+   - localStorage保存用户语言偏好
+   - 支持200+个翻译键
+   - 点击按钮实时翻译所有页面内容
+   - 自定义 t() 函数用于获取翻译文本
+   - updatePageLanguage() 函数更新所有带 data-i18n 属性的元素
+
+2. 浅蓝色渐变背景
+   - 背景颜色：#e8f4f8 到 #d4e9f2的渐变
+   - 背景固定，滚动时不动
+   - 整个页面都有背景覆盖
+
+3. 开源项目Portfolio
+   - 6个开源项目展示：
+     * Vue Admin Dashboard (Vue + Frontend) - EN: "Vue Admin Dashboard"
+     * React E-Commerce Platform (React + Frontend) - EN: "React E-Commerce Platform"
+     * Node.js Task Manager (Node.js + Backend) - EN: "Node.js Task Manager"
+     * Python Data Analyzer (Python + Backend) - EN: "Python Data Analyzer"
+     * Mobile Weather App (Flutter + Frontend) - EN: "Mobile Weather App"
+     * Web Framework CLI Tool (TypeScript + Backend) - EN: "Web Framework CLI Tool"
+   - 中文名称：
+     * Vue 后台管理系统, React 电商平台, Node.js 任务管理器
+     * Python 数据分析工具, 移动天气应用, Web 框架 CLI 工具
+   - 项目链接指向GitHub
+   - 支持中英文翻译（portfolio_item1-6, portfolio_cat1-4）
+
+4. Features 部分 - 3个完整主题
+   
+   第1个Features - 开源项目主题
+   - 标题：EN "Open Source Projects" / ZH "开源项目"
+   - 描述：关于开源社区贡献和MIT许可证的承诺
+   - 展示4个开源项目：
+     * EN: Vue.js Admin Dashboard / ZH: Vue.js 后台管理系统
+     * EN: React E-Commerce Platform / ZH: React 电商平台
+     * EN: Node.js Backend Framework / ZH: Node.js 后端框架
+     * EN: Python Data Science Library / ZH: Python 数据科学库
+   - 项目链接指向GitHub，支持新窗口打开
+   - 完整的i18n支持（data-i18n: features_title1, features_desc1, features_item1-4）
+
+   第2个Features - 软件开发主题
+   - 标题：EN "Software Development: Documented" / ZH "软件开发：文档齐全"
+   - 描述：长期确定事实相关文本
+   - 列表项：Back-End, Front-End, e-Commerce, Print Design
+   - 中文：后端, 前端, 电子商务, 印刷设计
+   - i18n支持（data-i18n: features_title2, features_desc2, features_backend等）
+
+   第3个Features - 定制软件主题
+   - 标题：EN "Custom Software That Brings Value" / ZH "带来价值的定制软件"
+   - 描述：长期确定事实相关文本
+   - 列表项：Backup Systems, Hybrid Cloud, API Cloud, Cloud Hosting
+   - 中文：备份系统, 混合云, API 云, 云托管
+   - i18n支持（data-i18n: features_title3, features_desc3, features_backup等）
+
+5. 完整的国际化支持（200+个翻译键）
+   - Navigation (20个键) - 导航菜单、链接文本
+   - Banner (3个键) - 横幅标题、描述、按钮
+   - Featured Services (5个键) - 服务标题和描述
+   - Features (20个键) - 3个Features部分的标题、描述、列表项
+   - CTA (2个键) - 呼叫行动标题和按钮
+   - Portfolio/开源项目 (10个键) - 标题、描述、6个项目名称、分类标签
+   - Funfacts (4个键) - 统计数据标题
+   - Team (8个键) - 团队标题、描述、4个成员名称和职位
+   - Pricing (15个键) - 价格表标题、描述、3个方案名称、特性列表、按钮
+   - Blog (7个键) - 博客标题、描述、3个文章标题、通用描述、阅读按钮
+   - Partner (1个键) - 合作伙伴标题
+   - Footer (8个键) - 页脚各部分信息、联系方式、链接、版权说明
+
+===== 修改日志 =====
+
+文件修改：
+✓ index.html - 添加语言按钮、i18n标记、浅蓝色背景、更新Portfolio为开源项目、更新首个Features部分为开源项目主题、保留第2、3个Features部分原有内容
+✓ assets/css/style.css - 添加浅蓝色背景、语言按钮样式
+✓ assets/css/responsive.css - 添加语言按钮响应式样式
+✓ assets/js/active.js - 添加语言切换逻辑
+✓ assets/js/translations.js - 200+翻译键的完整英文和中文翻译词汇表：
+  - Navigation: 20个键（导航菜单、页面链接）
+  - Banner: 3个键（标题、描述、按钮）
+  - Featured Services: 5个键（4个服务标题 + 通用描述）
+  - Features: 20个键（3个Features部分各5个：标题、描述、4个列表项）
+  - CTA: 2个键（标题、按钮）
+  - Portfolio: 10个键（标题、描述、6个项目、2个分类标签）
+  - Funfacts: 4个键（项目、客户、团队、咖啡）
+  - Team: 8个键（标题、描述、4个成员名字、4个职位）
+  - Pricing: 15个键（标题、描述、3个方案、特性、按钮等）
+  - Blog: 7个键（标题、描述、3个文章、通用文章描述、阅读按钮）
+  - Partner: 1个键（标题）
+  - Footer: 8个键（各栏标题、链接、版权）
+✓ dir_version.txt - 更新功能文档，详细列出所有200+翻译键及其结构

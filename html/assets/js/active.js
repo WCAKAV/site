@@ -38,4 +38,31 @@
 		});
 	});
 
+	// Language Switcher
+	$(function(){
+		var currentLang = localStorage.getItem('language') || 'en';
+		
+		// Initialize language on page load
+		updatePageLanguage(currentLang);
+		updateLanguageButton(currentLang);
+		
+		// Language toggle button click event
+		$('#langToggle').on('click', function(e){
+			e.preventDefault();
+			currentLang = currentLang === 'en' ? 'zh' : 'en';
+			localStorage.setItem('language', currentLang);
+			updateLanguageButton(currentLang);
+			updatePageLanguage(currentLang);
+		});
+		
+		function updateLanguageButton(lang) {
+			var $langText = $('#langToggle .lang-text');
+			if (lang === 'zh') {
+				$langText.text('EN');
+			} else {
+				$langText.text('ZH');
+			}
+		}
+	});
+
 }(jQuery));

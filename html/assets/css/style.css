@@ -46,12 +46,20 @@ Default CSS
   --transition: .5s;
 }
 
+html {
+  background: linear-gradient(135deg, #e8f4f8 0%, #d4e9f2 50%, #e8f4f8 100%) !important;
+  background-attachment: fixed !important;
+}
+
 body {
   margin: 0;
   padding: 0;
   color: var(--blackColor);
   font-size: var(--fontSize);
   font-family: var(--fontFamily);
+  background: linear-gradient(135deg, #e8f4f8 0%, #d4e9f2 50%, #e8f4f8 100%) !important;
+  background-attachment: fixed !important;
+  min-height: 100vh;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -504,6 +512,39 @@ Navbar Area CSS
 
 .template-navbar .navbar .others-option .item:nth-child(1) .default-btn::before {
   background: var(--blackColor);
+}
+
+.template-navbar .navbar .others-option .language-switcher {
+  margin-left: 20px;
+}
+
+.template-navbar .navbar .others-option .lang-btn {
+  background: var(--mainColor);
+  color: var(--whiteColor);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--fontFamily);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.template-navbar .navbar .others-option .lang-btn:hover {
+  background: #3535c1;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(65, 70, 230, 0.3);
+}
+
+.template-navbar .navbar .others-option .lang-icon {
+  font-size: 14px;
+  display: inline-block;
 }
 
 @media only screen and (max-width: 991px) {

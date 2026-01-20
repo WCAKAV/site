@@ -431,6 +431,9 @@
   .template-navbar .navbar .others-option .item {
     margin-left: 15px;
   }
+  .template-navbar .navbar .others-option .language-switcher {
+    margin-left: 15px;
+  }
   .banner-wrapper {
     padding-top: 190px;
   }
